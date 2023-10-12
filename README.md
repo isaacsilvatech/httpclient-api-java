@@ -1,5 +1,7 @@
 # HttpClient API
 
+Esta API foi projetada para fornecer uma maneira contínua e eficiente de lidar com a comunicação HTTP em seus aplicativos, ao mesmo tempo que adere aos princípios SOLID e aproveita padrões de design como o Adapter e o Observer.
+
 ## Visão geral
 
 - **Programação Reativa** : A API é construída sobre os princípios da programação reativa, permitindo que você trabalhe com solicitações HTTP de maneira assíncrona e sem bloqueio. Diga adeus ao inferno dos retornos de chamada e adote uma abordagem mais elegante e eficiente para lidar com solicitações HTTP.
