@@ -12,7 +12,7 @@ Esta API foi projetada para fornecer uma maneira contínua e eficiente de lidar 
 
 - **Conversão automática de JSON** : a API simplifica sua vida convertendo automaticamente as respostas JSON nos tipos de dados desejados. Diga adeus à tediosa análise manual de JSON e concentre-se em usar os dados imediatamente.
 
-# Uso
+# Exemplo
 
 ```
 public class HttpClientTest {
