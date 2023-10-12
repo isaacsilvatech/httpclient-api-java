@@ -36,7 +36,6 @@ public class HttpClientTest {
 
 			System.out.println(e);
 		});
-
 	}
 }
 ```
