@@ -17,7 +17,7 @@ class Resquest {
 			connection.connect();
 
 			if(connection.getResponseCode() == HttpURLConnection.HTTP_OK) {
-				ResponseParser parser = ResponseType.APPLICATION_JSON.getParser();
+				ResponseParser parser = ResponseType.JSON.getParser();
 				ResponseScanner scanner = new ResponseScanner(connection.getInputStream(), parser);
 				return new Response(scanner, connection.getResponseCode());
 			}
