@@ -6,7 +6,7 @@ import br.com.isaac.httpclient.httpclient.ResponseError;
 
 public class HttpClientTest {
 
-	public static final String API_URL = "https://viacep.com.br/ws/72110025/json/";
+	public static final String API_URL = "https://viacep.com.br/ws/72236800/json";
 
 	public static void main(String[] args) {
 
