@@ -23,19 +23,11 @@ public class HttpClientTest {
 
 		HttpClient http = new HttpClient();
 
-		http.get(API_URL, CEP.class).subscribe(cep -> {
+		http.get(API_URL, CEP.class).subscribe(System.out::println);
 
-			System.out.println(cep);
-		});
-
-		http.get(API_URL, CEP.class).subscribe(cep -> {
-
-			System.out.println(cep);
-
-		}, (ResponseError e) -> {
-
-			System.out.println(e);
-		});
+	        http.get(API_URL, CEP.class).subscribe(System.out::println, (ResponseError e) -> {
+	            System.out.println(e);
+	        });
 	}
 }
 ```
