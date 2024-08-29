@@ -6,26 +6,18 @@ import br.com.isaac.httpclient.httpclient.ResponseError;
 
 public class HttpClientTest {
 
-	public static final String API_URL = "https://viacep.com.br/ws/72236800/json";
+    public static final String API_URL = "https://viacep.com.br/ws/72236800/json";
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		HttpClient http = new HttpClient();
+        HttpClient http = new HttpClient();
 
-		http.get(API_URL, CEP.class).subscribe(cep -> {
+        http.get(API_URL, CEP.class).subscribe(System.out::println);
 
-			System.out.println(cep);
-		});
+        http.get(API_URL, CEP.class).subscribe(System.out::println, (ResponseError e) -> {
+            System.out.println(e);
+        });
 
-		http.get(API_URL, CEP.class).subscribe(cep -> {
-
-			System.out.println(cep);
-
-		}, (ResponseError e) -> {
-
-			System.out.println(e);
-		});
-
-	}
+    }
 
 }

@@ -8,7 +8,7 @@ import br.com.isaac.httpclient.httpclient.reactive.Subject;
 
 public class HttpClient {
 
-	private HttpClientExecutor executor = new HttpClientExecutor();
+	private final HttpClientExecutor executor = new HttpClientExecutor();
 
 	public <T> Observable<T> get(String apiUrl, Class<T> clazz) {
 
